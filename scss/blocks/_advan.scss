@@ -1,0 +1,44 @@
+.advan {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 30px;
+    max-width: 270px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1024px) {
+    &__item {
+      max-width: 45%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      max-width: 100%;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__item {
+      padding: 8px 15px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.header {
+  &__select {
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+  }
+  &__schema {
+    display: inline-block;
+    margin-top: 6px;
+    border-bottom: 1px solid #e13b3f;
+    color: #e13b3f;
+  }
+  &__input {
+    height: 46px;
+    width: 300px;
+    padding-left: 25px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #a8d1e7;
+  }
+  &__label {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  &__container {
+    width: fit-content;
+  }
+  &__call {
+    display: block;
+    @include link;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+  &__btn {
+    display: none;
+  }
+}
+.menu {
+  background-color: #a8d1e7;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    a {
+      @include link;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__top,
+  .header__box {
+    display: none;
+  }
+  .header__btn {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}

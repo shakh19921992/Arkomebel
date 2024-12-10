@@ -1,0 +1,33 @@
+.catalog {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    max-width: 300px;
+    @media screen and (max-width: 1500px) {
+      max-width: 250px;
+    }
+    span {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 22px;
+      background-color: $main-bg-color;
+      color: #fff;
+      @media screen and (max-width: 1500px) {
+        max-width: 250px;
+        padding: 2px 5px;
+        font-size: 12px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

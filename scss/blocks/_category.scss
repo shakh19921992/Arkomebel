@@ -1,0 +1,17 @@
+.category {
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    button {
+      padding: 12px 28px;
+      border: 1px solid $main-bg-color;
+      border-radius: 5px;
+
+      &:focus {
+        color: #fff;
+        background-color: $main-bg-color;
+      }
+    }
+  }
+}
